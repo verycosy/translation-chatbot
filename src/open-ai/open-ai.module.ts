@@ -15,5 +15,6 @@ import { OpenAIService } from './open-ai.service';
     },
     OpenAIService,
   ],
+  exports: [OpenAIService],
 })
 export class OpenAIModule {}

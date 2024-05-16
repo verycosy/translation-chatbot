@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { OpenAIModule } from './open-ai/open-ai.module';
+import { DiscordModule } from './discord/discord.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), OpenAIModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), DiscordModule],
   controllers: [],
   providers: [],
 })
